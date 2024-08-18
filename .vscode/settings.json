@@ -1,0 +1,12 @@
+{
+  "java.project.sourcePaths": [
+    "L-2.operators",
+    "L-3.conditionals",
+    "L-1.variables_datatypes",
+    "L-4 loops",
+    "L- 0 DSA",
+    "00 - DSA",
+    "L-5 patterns"
+  ],
+  "java.project.referencedLibraries": []
+}
