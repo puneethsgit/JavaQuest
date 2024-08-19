@@ -8,6 +8,8 @@
    5 5 6 7 8 9
  */
 
+//NOTE : THERE WILL ALWAYS BE RELATION BETWEEN I AND J
+
 public class Q12pattern {
     public static void main(String[] args) {
         int n = 5;

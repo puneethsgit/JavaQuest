@@ -1,3 +1,5 @@
+//SUM OF ODD & EVEN NUM
+
 import java.util.Scanner;
 
 public class Q3oddreven {

@@ -1,3 +1,5 @@
+//PRINT TABLES OF A NUMBER
+
 import java.util.Scanner;
 
 public class Q5tables {

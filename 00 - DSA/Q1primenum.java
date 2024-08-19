@@ -1,3 +1,5 @@
+//PRIME NUMBER
+
 import java.util.Scanner;
 
 public class Q1primenum {
