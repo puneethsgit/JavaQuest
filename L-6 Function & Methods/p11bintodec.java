@@ -1,6 +1,6 @@
 public class p11bintodec {
     public static void main(String[] args) {
-        binToDec(1011);
+        binToDec(1110);
     }
 
     public static void binToDec(int binNum){
