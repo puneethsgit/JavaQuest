@@ -6,6 +6,7 @@ public class Q23lengthmethod {
         int count = 0;
         try {
             while (true) {
+                @SuppressWarnings("unused")
                 int temp = array[count];  // Try accessing each index
                 count++;  // Increment counter if successful
             }

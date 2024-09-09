@@ -2,7 +2,7 @@
    * *
    * * *
    * * * *
-  
+   * * * * *
  */
 
 public class p1printstar {
