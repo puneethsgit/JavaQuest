@@ -11,6 +11,6 @@ public class P4floydstriangle {
     }
 
     public static void main(String[] args) {
-        floyds(6);
+        floyds(10);
     }
 }
