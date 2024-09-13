@@ -1,3 +1,10 @@
+/*
+         * * * * * 
+      *       * 
+    *       * 
+  *       * 
+* * * * * 
+ */
 public class P8hollowrhombus {
     
     public static void hollowrhombus(int n){

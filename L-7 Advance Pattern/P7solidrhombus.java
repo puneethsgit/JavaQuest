@@ -1,3 +1,10 @@
+/*
+         * * * * *
+      * * * * *
+    * * * * *
+  * * * * *
+* * * * *
+ */
 public class P7solidrhombus {
     
     public static void rhombus(int n){

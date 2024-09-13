@@ -1,3 +1,14 @@
+/*
+  *             * 1sthalf
+  * *         * * 
+  * * *     * * * 
+  * * * * * * * * 
+  * * * * * * * * 2nd half
+  * * *     * * * 
+  * *         * * 
+  *             * 
+ */
+
 public class P6Butterfly {
     public static void butterfly(int n){
         //1st half
@@ -36,6 +47,6 @@ public class P6Butterfly {
     }
 
     public static void main(String[] args) {
-        butterfly(10);
+        butterfly(4 );
     }
 }

@@ -1,3 +1,15 @@
+/*
+       * 
+    * * *
+  * * * * *
+* * * * * * *
+* * * * * * *
+  * * * * *
+    * * *
+      *
+ */
+
+
 public class P9diamond {
     
     public static void diamon(int n){
@@ -8,7 +20,7 @@ public class P9diamond {
                 System.out.print(" "+" ");
             }
             //star
-            for(int j=1; j<=(2*i)-1; j++){
+            for(int j=1; j<=(2*i)-1; j++){  //odd num (1,3,5,7,9..etc)
               System.out.print("*"+ " ");
             }
             System.out.println();
@@ -29,6 +41,6 @@ public class P9diamond {
     }
 
     public static void main(String[] args) {
-        diamon(10);
+        diamon(4);
     }
 }

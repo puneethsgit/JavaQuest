@@ -6,7 +6,7 @@ public class P10primerange {
         //primeRange
         public static void primeRange(int m, int n){
             for(int i=m; i<=n; i++){
-                if(isPrime(i)){
+                if(isPrime(i)){ //if true then prints SOP()
                     System.out.print(i+" ");
                 }
             }

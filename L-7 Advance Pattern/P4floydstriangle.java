@@ -1,3 +1,12 @@
+/*
+   1
+   2 3
+   4 5 6
+   7 8 9 10
+ */
+
+
+
 public class P4floydstriangle {
     public static void floyds(int n){
         int count = 1;

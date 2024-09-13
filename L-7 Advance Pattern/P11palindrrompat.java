@@ -1,3 +1,11 @@
+/*
+    1
+   212
+  32123
+ 4321234
+543212345
+ */
+
 public class P11palindrrompat {
     
     public static void palindromepat(int n){

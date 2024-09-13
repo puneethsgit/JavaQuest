@@ -10,7 +10,7 @@ public class p5factorial {
     }
 
     public static int factorial(int num){
-        int f=1;
+        int f=1; //it should be zero if it zero means anything multiple of zero is zero
         for(int i=1; i<=num; i++){
             f *= i; //fact = fact * i
         }
