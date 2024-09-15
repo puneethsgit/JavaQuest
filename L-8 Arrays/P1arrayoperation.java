@@ -7,6 +7,7 @@ public class P1arrayoperation {
         
         //input
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter marks each");
         marks[0] = sc.nextInt();
         marks[1] = sc.nextInt();
         marks[2] = sc.nextInt();
