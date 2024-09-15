@@ -1,8 +1,18 @@
+import java.util.Scanner;
+
 public class P1arrayoperation {
     public static void main(String[] args) {
         //create array
         int marks[] = new int[50];
-        int numbers[] = {1,2,3,4};
-        String fruits[] = {"apple", "mango", "orange"};
+        
+        //input
+        Scanner sc = new Scanner(System.in);
+        marks[0] = sc.nextInt();
+        marks[1] = sc.nextInt();
+        marks[2] = sc.nextInt();
+        System.out.println("phy: " + marks[0]);
+        System.out.println("chem: " + marks[1]);
+        System.out.println("math: " + marks[2]);
+        sc.close();
     }
 }
