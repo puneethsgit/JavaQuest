@@ -10,15 +10,17 @@ public class P11subarraysum {
                 for(int k=start; k<=end; k++){ //for print
                     System.out.print( numbers[k] + " ");
                     sum += numbers[k];
-                    if(sum > maxSum){
-                        maxSum = sum;
-                    }
-                    if(sum < minSum){
-                        minSum = sum;
-                    }
                 }
-                System.out.println("sum : "+sum);
-                System.out.println();
+                //maxsum
+                if(sum > maxSum){
+                    maxSum = sum;
+                }
+                //minsum
+                if(sum < minSum){
+                    minSum = sum;
+                }
+                
+                System.out.println("-> sum : "+sum);
                 sum=0;
             }
             System.out.println();
@@ -28,7 +30,7 @@ public class P11subarraysum {
         System.out.println("MinSum : "+minSum);
     }
     public static void main(String[] args) {
-        int numbers[] = {2,4,6,8,10,12,14,16};
+        int numbers[] = {2,4,6,8,10};
         printSubarrays(numbers);
     }
 }
