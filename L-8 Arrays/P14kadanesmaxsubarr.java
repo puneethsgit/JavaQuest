@@ -20,20 +20,3 @@ public class P14kadanesmaxsubarr {
         kadanes(numbers);
     }
 }
-/* SPECIAL CASAE FOR ZERO
- 
-        // Handle the special case where all numbers are negative (CHECKING GREATER NEGATIVE NUMBER)
-        int maxElement = Integer.MIN_VALUE;
-        for (int num : numbers) { //enchanced loop : for each
-            
-            if (num > maxElement) {
-                maxElement = num;
-            }
-        }       
-            //LAST
-
-        if (maxSum < maxElement) {
-            maxSum = maxElement;
-        } 
-
- */
