@@ -29,4 +29,4 @@ public class P13prefixmaxsubarr {
         printsubarrmax(numbers);
     }
 }
-/* TC : O(n2) */
+/* Time Complexity : O(n2) */
