@@ -25,7 +25,7 @@ public class P13prefixmaxsubarr {
         System.out.println("Max sum is = "+ maxSum);
     }
     public static void main(String[] args) {
-        int numbers[] = {1,-2,6,-1,3};
+        int numbers[] = {-4,-2,-6,-2,-3};
         printsubarrmax(numbers);
     }
 }
