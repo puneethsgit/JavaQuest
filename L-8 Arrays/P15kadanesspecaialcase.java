@@ -1,4 +1,6 @@
 public class P15kadanesspecaialcase {
+    /* Included Special Case for all negative numbers */
+    
     public static void kadanes(int numbers[]) {
         int currSum = 0;
         int maxSum = Integer.MIN_VALUE;
