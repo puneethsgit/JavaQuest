@@ -1,6 +1,6 @@
 /* Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
  */
-public class Q25trappingwater {
+public class Q26trappingwater {
     public static int trappingWater(int height[]){
         int n = height.length;
 
