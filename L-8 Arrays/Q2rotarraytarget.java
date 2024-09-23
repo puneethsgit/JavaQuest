@@ -36,6 +36,7 @@ public class Q2rotarraytarget {
                     low = mid + 1;
                 }
             }
+            
             else //if right part is sorted
             {  
                 if(nums[mid] <= target && target <= nums[high]){

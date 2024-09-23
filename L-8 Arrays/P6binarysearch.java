@@ -33,3 +33,6 @@ public class P6binarysearch {
     start = mid + 1;
   }
  */
+
+ /* // Using a for loop instead of while loop
+    for (int i = 0; start <= end; i++) */

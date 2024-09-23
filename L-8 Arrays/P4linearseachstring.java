@@ -10,7 +10,7 @@ public class P4linearseachstring {
 
     public static void main(String[] args) {
         String menu[] = {"apple", "mango", "orange"};
-        String key = "orange";
+        String key = "Orange"; //case sensetive
         int index = linearSearch(menu, key);
         if(index == -1){
             System.out.println("Not found !");

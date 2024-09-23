@@ -31,7 +31,9 @@ public class Q1arrelemtwice {
     }
     
     public static void main(String[] args) {
-        int nums[] = {1,2,3,4};
-        System.out.println(hashSet(nums));
+        int nums[] = {1,2,3,1};
+        System.out.println(arrayCheck(nums));
     }
 }
+
+/* NOTE : i < nums.length: This condition would allow the loop to iterate until i reaches the last index of the array. However, at this point, there’s no need to compare the last element with itself since the inner loop compares nums[i] with all subsequent elements (j = i + 1). Once i reaches the last element, there are no subsequent elements left to compare, so this condition leads to an unnecessary iteration. so used i < nums.length -1 */
