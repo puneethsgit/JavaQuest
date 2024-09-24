@@ -4,7 +4,7 @@ You must write an algorithm that runs in O(n) time and without using the divisio
 
 import java.util.Arrays;
 
-public class Q6productofarr {
+public class Q30productofarr {
 
     //Brute Force Approach TC:O(n2)
     public static int[] productExpectSelf1(int nums[]){
@@ -57,8 +57,8 @@ public class Q6productofarr {
         //suffix
         int suffix=1;
         for(int i=n-2; i>=0; i-- ){
-           suffix *= nums[i+1]; //suffix = suffix * nums[i+1]
-           answer[i] *= suffix; //answer[i] = answer[i] * suffix
+           suffix *= nums[i+1];
+           answer[i] *= suffix;
         }
      return answer;   
     }
