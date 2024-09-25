@@ -1,11 +1,12 @@
+/* In selection sort we will take the minimum(or maximum for DESC) value and we will place it in the begining for array */
 public class P2selectionsort {
     
     //TC-O(n2) but it reduces unnecessary swaping   
     public static void selectionSort(int arr[]){
-         for(int i=0; i<=arr.length-2; i++){
+         for(int i=0; i<arr.length-1; i++){
             int minPos = i;
-            for(int j=i; j<=arr.length-1; j++){
-                if(arr[minPos] > arr[j]){
+            for(int j=i; j<arr.length; j++){
+                if(arr[minPos] > arr[j]){ //arr[j] < arr[minPos]
                     minPos = j;
                 }
             }

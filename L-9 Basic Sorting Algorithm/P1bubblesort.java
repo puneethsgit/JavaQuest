@@ -1,7 +1,9 @@
+/* In bubble sort we will compare the adjacent element and we will swap*/
+
 public class P1bubblesort {
     public static void bubblesort(int arr[]){
-        for(int turn=0; turn<arr.length-1; turn++){
-            for(int j=0; j<arr.length-1-turn; j++){
+        for(int i=0; i<arr.length-1; i++){
+            for(int j=0; j<arr.length-1-i ; j++){
                 if(arr[j] < arr[j+1]){
                     //swap
                     int temp = arr[j];
@@ -26,11 +28,11 @@ public class P1bubblesort {
     
 }
 
-/* OPTIMIZED BUBBLE SORT WITH TIME COMPLEXITY O(N)
+/* OPTIMIZED BUBBLE SORT WITH TIME COMPLEXITY O(N) only for best case (1,2,3,4) worst case O(n2)
 public static void bubbleSort(int arr[]) {
-    for (int turn = 0; turn < arr.length - 1; turn++) {
-        boolean swapped = false;  // This will track if any swaps occurred in this turn
-        for (int j = 0; j < arr.length - 1 - turn; j++) {
+    for (int i  = 0; i  < arr.length - 1; i ++) {
+        boolean swapped = false;  // This will track if any swaps occurred in this i 
+        for (int j = 0; j < arr.length - 1 - i ; j++) {
             if (arr[j] > arr[j + 1]) {
                 // Swap the elements
                 int temp = arr[j];
