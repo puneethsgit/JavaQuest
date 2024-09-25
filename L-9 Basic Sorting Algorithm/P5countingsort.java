@@ -9,7 +9,7 @@ public class P5countingsort {
         //frequency count
         int count[] = new int[largest+1];
         for(int i=0; i<arr.length; i++){
-            count[arr[i]]++;    
+            count[arr[i]]++;    //count increment if arr[3] = 4 count[4] -> point to -> index
         }
 
         //sorting
