@@ -18,9 +18,9 @@ public class Q21palindrome {
         int palindrome = number;
         int reverse = 0;
         while (palindrome != 0) {
-            int rem = palindrome % 10;
+            int rem = palindrome % 10; //last digit exract
             reverse = reverse * 10 + rem;
-            palindrome /= 10; // palindrome = palindrome / 10;
+            palindrome /= 10; // palindrome = palindrome / 10; (last digit remove   )
         }
         if(number == reverse){
             return true;
