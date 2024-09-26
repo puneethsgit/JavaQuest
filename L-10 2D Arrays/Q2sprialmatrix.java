@@ -11,7 +11,7 @@ public class Q2sprialmatrix {
             //while we can also use while(true) i = row and j = col
 
             //top
-            for(int j=startRow; j<=endCol; j++){
+            for(int j=startCol; j<=endCol; j++){
                 System.out.print(matrix[startRow][j]+" ");
             }
 
