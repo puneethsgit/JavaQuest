@@ -1,4 +1,4 @@
-public class Q2sprialmatrix {
+public class Q32sprialmatrix {
 
     public static void printSprial(int matrix[][]){
         int startRow=0;
