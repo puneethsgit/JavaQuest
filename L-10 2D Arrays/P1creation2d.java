@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q1creation2d {
+public class P1creation2d {
 
     //search key
     public static boolean searchKey(int matrix[][], int key){

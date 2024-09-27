@@ -1,4 +1,4 @@
-public class Q3diagonalsum {
+public class P3diagonalsum {
 
     public static int diagonalsum(int matrix[][]){ //TC-O(n2)
         int sum = 0;

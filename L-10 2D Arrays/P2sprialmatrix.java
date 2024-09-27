@@ -1,4 +1,4 @@
-public class Q2sprialmatrix {
+public class P2sprialmatrix {
 
     public static void printSprial(int matrix[][]){
         int startRow=0;
