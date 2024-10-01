@@ -39,7 +39,7 @@ public class P9stringcompress {
         return newStr.toString();
     }
     public static void main(String[] args) {
-        String str = "aabc";
-        System.out.println(compress2(str));
+        String str = "aaaabbbbbbbbcccc";
+        System.out.println(compress1(str));
     }
 }
