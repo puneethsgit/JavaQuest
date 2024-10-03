@@ -37,4 +37,4 @@ More memory-efficient
 
  */
 
- /* Thread Safe -> means When a method or class is synchronized, it means that access to it is controlled, allowing only one thread to execute that code at a time. This prevents multiple threads from interfering with each other, which is crucial in a multi-threaded environment. StringBuffer is designed to be used safely in a multi-threaded environment.*/
+ /* Thread Safe  means When a method or class is synchronized, it means that access to it is controlled, allowing only one thread to execute that code at a time. This prevents multiple threads from interfering with each other, which is crucial in a multi-threaded environment. StringBuffer is designed to be used safely in a multi-threaded environment.*/
