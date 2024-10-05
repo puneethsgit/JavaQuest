@@ -1,6 +1,6 @@
 /*In bubble sort we will compare the adjacent element and we will swap*/
 public class P1bubblesort {
-    public static void bubblesort(int arr[]){
+    public static void bubblesortt(int arr[]){
         for(int i=0; i<arr.length-1; i++){
             for(int j=0; j<arr.length-1-i ; j++){
                 if(arr[j] < arr[j+1]){
@@ -21,7 +21,7 @@ public class P1bubblesort {
     }
     public static void main(String[] args) {
         int arr[] = {5,4,1,3,2}; 
-        bubblesort(arr);
+        bubblesortt(arr);
         printArr(arr);
     }
     
