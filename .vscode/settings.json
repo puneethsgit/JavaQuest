@@ -12,7 +12,8 @@
     "L-8 Arrays",
     "L-9 Basic Sorting Algorithm",
     "L-10 2D Arrays",
-    "L-11 Strings"
+    "L-11 Strings",
+    "L-12 Bitmanipulation"
   ],
   "java.project.referencedLibraries": []
 }
