@@ -1,5 +1,5 @@
 public class P1bitwise {
-
+    /* NOTE : In Binary number index starts from right hand side (0) not from LHS as array and string */
     public static void main(String[] args) {
         System.out.println((5&6));  //OUTPUT -> 4 (bitwise and)
         System.out.println((5|6)); //OUTPUT -> 7 (bitwise or)
