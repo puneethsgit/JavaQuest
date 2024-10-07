@@ -21,7 +21,37 @@ public class P3operations {
         int bitMask = ~(1 << i);
         return n & bitMask;
     }
+
+    //update ith Bit (APPROACH - 1)
+    public static int updateIthBit(int n, int i, int newBit){
+        if(newBit == 0){
+           return clearIthBit(n, i);
+        }else{
+           return setIthBit(n, i);
+        }
+    }
+
+    //update ith Bit (APPROACH - 2)
+    public static int updateIthBit1(int n, int i, int newBit){
+        n = clearIthBit(n, i);
+        int bitMask = newBit << i;
+        return n | bitMask;
+    }
+
+    //clear last i bits
+    public static int clearithBits(int n, int i){
+        int bitMask = (~0) << 2;
+        return n & bitMask;
+    }
+
+    //clear range of bits
+    public static int clearBitsInRange(int n, int i, int j){
+        int a = ((~0)<<(j+1));
+        int b = (1<<i)-1;
+        int bitMask = a | b;
+        return n & bitMask;
+    }
     public static void main(String[] args) {
-        System.out.println(clearIthBit(10, 1));
+        System.out.println(clearBitsInRange(10, 2, 4));
     }
 }
