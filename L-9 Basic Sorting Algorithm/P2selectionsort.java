@@ -6,7 +6,7 @@ public class P2selectionsort {
          for(int i=0; i<arr.length-1; i++){
             int minPos = i;
             for(int j=i+1; j<arr.length; j++){
-                if(arr[minPos] > arr[j]){ //arr[j] < arr[minPos]
+                if(arr[minPos] > arr[j]){ //arr[j] < arr[minPos] here it is finding min elem pos
                     minPos = j;
                 }
             }
