@@ -1,5 +1,4 @@
 public class P1bubbleesort {
-
     /* In bubble sort we will compare the adjacent element and we will swap */
     public static void bubblesortt(int arr[]) {
         for (int i = 0; i < arr.length - 1; i++) {
