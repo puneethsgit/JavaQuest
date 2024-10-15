@@ -8,7 +8,7 @@ public class P5substring {
     }
 
     public static void main(String[] args) {
-        String str = "HelloWorld";
+        String str = "HelloWorldd";
         System.out.println(subString(str, 0, 3));
         System.out.println(str.substring(0,5));
     }
