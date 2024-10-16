@@ -1,6 +1,6 @@
 public class P3operations {
     
-    //Get ith Bit
+    //Get ith Bit (ith bit get means return either 1 or 0 )
     public static int getIthBit(int n, int i){
         int bitMask = 1 << i; //creates a bitmask where only the i-th bit is 1, 
         /*if the bitmask is just bitMask = 1 means then it only check that 0 index LSB but when we use bitMask as 
@@ -12,13 +12,13 @@ public class P3operations {
         }
     }
 
-    //Set ith Bit
+    //Set ith Bit (ith bit 0 means set it to 1 if already 1 means 1 set again)
     public static int setIthBit(int n, int i){
         int bitMask = 1 << i;
         return n | bitMask;
     }
 
-    //Clear ith Bit
+    //Clear ith Bit (ith bit 1 means clear it to 0 if already 0 means keep it 0 itself set again)
     public static int clearIthBit(int n, int i){
         int bitMask = ~(1 << i);
         return n & bitMask;
