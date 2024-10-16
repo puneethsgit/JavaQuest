@@ -2,7 +2,9 @@ public class P3operations {
     
     //Get ith Bit
     public static int getIthBit(int n, int i){
-        int bitMask = 1 << i; //creates a bitmask where only the i-th bit is 1,
+        int bitMask = 1 << i; //creates a bitmask where only the i-th bit is 1, 
+        /*if the bitmask is just bitMask = 1 means then it only check that 0 index LSB but when we use bitMask as 
+        bitMask = 1<<i it actually checks the ith bit is 1 or 0*/
         if((n & bitMask) == 0){
             return 0;
         }else{
