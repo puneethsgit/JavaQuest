@@ -28,25 +28,25 @@ public class P1bubbleesort {
 
 }
 
-/*
- * OPTIMIZED BUBBLE SORT WITH TIME COMPLEXITY O(N) only for best case (1,2,3,4)
- * worst case O(n2)
- * public static void bubbleSort(int arr[]) {
- * for (int i = 0; i < arr.length - 1; i ++) {
- * boolean swapped = false; // This will track if any swaps occurred in this i
- * for (int j = 0; j < arr.length - 1 - i ; j++) {
- * if (arr[j] > arr[j + 1]) {
- * // Swap the elements
- * int temp = arr[j];
- * arr[j] = arr[j + 1];
- * arr[j + 1] = temp;
- * swapped = true; // A swap occurred
- * }
- * }
- * // If no swaps occurred during this entire pass, break out of the loop early
- * if (!swapped) {
- * break;
- * }
- * }
- * }
- */
+    /*
+    * OPTIMIZED BUBBLE SORT WITH TIME COMPLEXITY O(N) only for best case (1,2,3,4)
+    * worst case O(n2)
+    * public static void bubbleSort(int arr[]) {
+    * for (int i = 0; i < arr.length - 1; i ++) {
+    * boolean swapped = false; // This will track if any swaps occurred in this i
+    * for (int j = 0; j < arr.length - 1 - i ; j++) {
+    * if (arr[j] > arr[j + 1]) {
+    * // Swap the elements
+    * int temp = arr[j];
+    * arr[j] = arr[j + 1];
+    * arr[j + 1] = temp;
+    * swapped = true; // A swap occurred
+    * }
+    * }
+    * // If no swaps occurred during this entire pass, break out of the loop early
+    * if (!swapped) {
+    * break;
+    * }
+    * }
+    * }
+    */
