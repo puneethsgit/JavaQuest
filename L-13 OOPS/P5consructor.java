@@ -4,6 +4,9 @@
   2) constructor dont have return type not even void
   3) constructor are only called once at object creation
   4) memory allocation happens when constructor is called
+
+
+  DESTRUCTOR - JAVA DONT HAVE DESTRUCTOR IT USE GARBAGE COLLECTOR TO DELETE UNWANTED VARAIBALES AND METHODS AUTOMATICALLY
  */
 public class P5consructor {
     

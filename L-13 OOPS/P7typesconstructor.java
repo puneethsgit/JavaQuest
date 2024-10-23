@@ -6,7 +6,7 @@ public class P7typesconstructor {
         Student s2 = new Student("puneeth"); 
         Student s3 = new Student(123);
         //Student s4 = new Student("ram",1); 
-        //this will give us error because there is constructor that match this parameters
+        //this will give us error because there is no constructor that match this parameters
         System.out.println(s3.rollno);
         System.out.println(s3.name);
     }
