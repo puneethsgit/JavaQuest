@@ -1,5 +1,5 @@
 /* RUN TIME POLYMORPHISM METHOD OVERRIDING 
- Function overriding means when the child class contains the method which is already present in the parent class. Hence, the child class overrides the method of the parent class
+ Function overriding means when the child class contains the method which is already present in the parent class. Hence, the child class overrides the method of the parent class.
  */
 
  class Animal {
