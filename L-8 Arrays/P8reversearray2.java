@@ -1,11 +1,11 @@
 public class P8reversearray2 {
     public static void reverseArray(int[] num) {
-        int n = num.length;
+        int n = num.length-1;
         for (int i = 0; i < n / 2; i++) {
-            // Swap elements at positions i and (n - i - 1)
+            // Swap elements at positions i and (n - i - 1) or (n-i)
             int temp = num[i];
-            num[i] = num[n - i - 1];
-            num[n - i - 1] = temp;
+            num[i] = num[n - i ];
+            num[n - i] = temp;
         }
     }
 
