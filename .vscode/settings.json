@@ -15,7 +15,10 @@
     "L-11 Strings",
     "L-12 Bitmanipulation",
     "L-13 OOPS",
-    "L-14 Recursion"
+    "L-14 Recursion",
+    "L-1 variables &datatypes",
+    "L-2 operators",
+    "L-3 conditionals"
   ],
   "java.project.referencedLibraries": []
 }
