@@ -1,4 +1,4 @@
-public class P7reversearray {
+public class P7reversearray {  //2 pointer algorithm approach
     public static void reverseArray(int num[]){
         int start = 0;
         int end =  num.length-1;
