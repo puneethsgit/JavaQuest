@@ -14,9 +14,10 @@ public class Q3transposematrix {
     }
 
     public static void main(String[] args) {
-        int row = 2, col = 3;
-        int matrix[][] = {{2,3,7},{5,6,7}};
         
+        int matrix[][] = {{2,3,7},{5,6,7}};
+        int row = matrix.length, col = matrix[0].length;
+
         //Display original matrix
         printMatrix(matrix);
 
