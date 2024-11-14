@@ -14,7 +14,8 @@ public class Q6productofarr {
         for(int i=0; i<n; i++){;
             for(int j=0; j<n; j++){
                if(i != j){
-                    answer[i] *= nums[j]; //answer[i] = ans[i] * nums[j]
+                    answer[i] *= nums[j]; //answer[i] = answer[i] * nums[j] 
+                    //[0,0,0,0] because anything multiply with zero is zero so [1,1,1,1]
                }
             }
         }
