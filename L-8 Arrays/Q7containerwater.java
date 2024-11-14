@@ -5,8 +5,8 @@ public class Q7containerwater {
         int n = height.length;
         for(int i=0; i<n; i++){
             for(int j=i+1; j<n; j++){
-                int w = j-i;
-                int ht = Math.min(height[i], height[j]);
+                int w = j-i; //width 
+                int ht = Math.min(height[i], height[j]);//height
                 int currWater = w * ht;
                 maxWater = Math.max(currWater, maxWater);
             }
