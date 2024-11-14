@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 public class P6countingsortneg {
     
     public static void countingSort(int arr[]) {
@@ -19,7 +22,8 @@ public class P6countingsortneg {
         for (int i = 0; i < arr.length; i++) {
             count[arr[i] - min]++;
         }
-
+        System.out.println(Arrays.toString(count));
+        
         // Sorting
         int j = 0;
         for (int i = 0; i < count.length; i++) {
