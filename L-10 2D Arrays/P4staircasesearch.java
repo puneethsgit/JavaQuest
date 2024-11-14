@@ -23,3 +23,33 @@ public class P4staircasesearch {
         stairCaseSearch(matrix, key);
     }
 }
+/* USING ONLY BINARY SEARCH  
+ public static boolean binarySearchMatrix(int[][] matrix, int key) {
+        int n = matrix.length;
+        if (n == 0) return false;
+        int m = matrix[0].length;
+
+        int left = 0, right = n * m - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            
+            // Convert mid to 2D matrix indices
+            int row = mid / m;
+            int col = mid % m;
+
+            // Check if the mid element is the key
+            if (matrix[row][col] == key) {
+                System.out.println("Found key at (" + row + ", " + col + ")");
+                return true;
+            } else if (matrix[row][col] < key) {
+                // Move right in the flattened array
+                left = mid + 1;
+            } else {
+                // Move left in the flattened array
+                right = mid - 1;
+            }
+        }
+        System.out.println("Key not found");
+        return false;
+    } */
