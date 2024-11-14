@@ -4,7 +4,7 @@ public class P2sprialmatrix {
         int startRow=0;
         int startCol = 0;
         int endRow = matrix.length-1;
-        int endCol = matrix[1].length-1;
+        int endCol = matrix[0].length-1;
 
 
         while(startRow <= endRow && startCol <= endCol){  
