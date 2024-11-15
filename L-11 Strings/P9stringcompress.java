@@ -8,13 +8,13 @@ public class P9stringcompress {
         String newStr = "";
         
         for(int i=0; i<str.length(); i++){
-            Integer count = 1;
+            Integer count = 1; //used object integer so that we can use this method toString()
             while(i<str.length()-1 && str.charAt(i) == str.charAt(i+1)){
                 count++;
                 i++;
             }
             newStr += str.charAt(i);
-            if(count > 1){
+            if(count > 1){  //decompress
                 newStr += count.toString();
             }   
         }
