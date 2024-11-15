@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class Q4stringanagram {
     public static void main(String[] args) {
         String str1 = "race";
-        String str2 = "caxe";
+        String str2 = "care";
 
         
         //convert string to lowercase so we dont have to check seperately for lower and upper case
@@ -24,7 +24,7 @@ public class Q4stringanagram {
         //Length check for both string
         if(str1.length() == str2.length()){
             //convert string into char array (using method called toCharArray())
-            char[] str1charArray = str1.toCharArray();
+            char str1charArray[] = str1.toCharArray(); //[] different syntax can be used
             char[] str2charArray = str2.toCharArray();
             //sort the char arrays
             Arrays.sort(str1charArray);
