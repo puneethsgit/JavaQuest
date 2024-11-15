@@ -16,15 +16,16 @@ public class P7typesconstructor {
         Student s2 = new Student(s1);
         s2.password = "xyz";
         s1.marks[2] = 100;
-        // Here in line 14 s2 already copied s1 and now we have made change but this
+        // Here in s2 already copied s1 and now we have made change but this
         // change should be reflected in s2 but we can see the changes this is because
         // in copy constructor we wrote a statement this.marks = s1.marks here it doesnt
         // copied whole array it just copied the array reference (Pointing)
-
+       // System.out.println(s1.password);
+       // System.out.println(s2.password);
         for (int i = 0; i < 3; i++) {
             System.out.println(s2.marks[i]);
         }
-
+       // System.out.println(s1.marks[2]);
     }
 }
 

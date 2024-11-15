@@ -1,5 +1,5 @@
 /* CONSTRUCTOR IS A SPECIAL METHOD WHICH IS INVOKED AUTOMATICALLY AT THE TIME OF OBJECT CREATION
-  1) constructor have the ssame name as class or structure (structure refer to c ++) ie if we create a Pen class means
+  1) constructor have the same name as class or structure (structure refer to c ++) ie if we create a Pen class means
   then there will be constructor with the same name Pen()
   2) constructor dont have return type not even void
   3) constructor are only called once at object creation
