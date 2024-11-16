@@ -5,7 +5,7 @@ public class Q10oops {
         t.changeB();
         System.out.println(Test.a+Test.b);
         Test t1 = new Test();
-        t1.chaneB();
+        t1.changeB();
         System.out.println(Test.a+Test.b);
     }
 }
