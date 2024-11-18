@@ -1,13 +1,13 @@
 /*WAF to find the first occurenace of an element in an array     */
 public class P7firstoccurence {
     public static int firstOccurence(int arr[], int key, int i) {
-        if(i == arr.length) {
+        if(i == arr.length) {  
             return -1;
         }
         if(arr[i] == key){
             return i; //return index 
         }
-        return firstOccurence(arr, key, i+1);
+        return firstOccurence(arr, key, i+1); 
     }
     
     public static int firstOccurence1(int arr[], int key, int i) {
@@ -17,7 +17,7 @@ public class P7firstoccurence {
         if(arr[i] == key){
             return i; //return index 
         }
-        return firstOccurence(arr, key, i++); //or ++i
+        return firstOccurence(arr, key, ++i); 
     }
 
 

@@ -1,12 +1,12 @@
 public class P8lastoccurence {
     public static int lastoccurence1(int arr[], int key, int i) {
-        if(i == 0){
+        if(i < 0){
             return -1;
         }
         if(arr[i] == key) {
             return i;
         }
-        return lastoccurence1(arr, key, i-1);
+        return lastoccurence1(arr, key, --i);
     }
 
     public static void main(String[] args) {
