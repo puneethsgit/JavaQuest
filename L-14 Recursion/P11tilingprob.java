@@ -18,6 +18,12 @@ public class P11tilingprob {
         return totWays;
      }
 
+     public static int tilingProblem1(int n) {
+         if(n == 0 || n == 1) {
+            return 1;
+         }
+         return tilingProblem1(n-1) + tilingProblem1(n-2);
+     }
      public static void main(String[] args) {
         System.out.println(tilingProblem(4));
      }
