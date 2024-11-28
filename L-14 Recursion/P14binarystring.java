@@ -25,7 +25,7 @@ public class P14binarystring {
         if(n==0) {
             System.out.println(str);
             return;
-        }
+        }   
         printBinString(n-1, 0, str+"0");
         if(lastPlace == 0) {
             printBinString(n-1, 1, str+"1");
