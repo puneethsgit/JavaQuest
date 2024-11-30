@@ -7,7 +7,7 @@ public class P1mergesort {
     }
 
     public static void mergeSort(int arr[], int si, int ei) {
-        if(si >= ei) { //baseCase
+        if(si >= ei) { //basecase
             return;
         }
         int mid = si + (ei - si)/2; //(si+ei)/2
