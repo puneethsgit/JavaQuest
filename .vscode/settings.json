@@ -21,5 +21,6 @@
     "L-3 conditionals",
     "L-15 Divide & Conquer"
   ],
-  "java.project.referencedLibraries": []
+  "java.project.referencedLibraries": [],
+  "java.debug.settings.onBuildFailureProceed": true
 }
