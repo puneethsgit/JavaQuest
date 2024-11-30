@@ -23,6 +23,7 @@ public class P1mergesort {
         int j = mid+1; //iterator for right part
         int k = 0; //iterator for temp arr
 
+        //--comparing arrays & assigning in temp arr--
         while(i <= mid && j <= ei) {
             if(arr[i] < arr[j]) { //left array lesser than right array
                 temp[k] = arr[i];
@@ -34,6 +35,8 @@ public class P1mergesort {
             k++;
         }
 
+
+        //--adding leftover elements
         //left-part left over element
         while(i <= mid) {
             temp[k++] = arr[i++]; //directly written post increment first use then increment
