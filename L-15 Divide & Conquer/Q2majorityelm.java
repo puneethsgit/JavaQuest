@@ -69,3 +69,19 @@ public class Q2majorityelm {
         System.out.println(majorityElem(nums));
     }
 }
+
+/* The brute force approach can comfortably handle around 1 million iterations in 1 second, which corresponds to n = 1,000.
+For larger values like n = 10,000, it will take around 100 million iterations, which may take several seconds.
+n = 50,000 would require 2.5 billion iterations, which is not feasible in 1 second on typical hardware. For such large values of n, the brute force approach would take too long and is impractical. 
+n == nums.length:
+
+The approach uses nums.length to define the size of the array and to calculate the majority count. It satisfies this condition since the logic directly depends on the length of the array.
+1 <= n <= 5 * 10^4:
+
+The brute force approach has a time complexity of O(n^2) because it uses two nested loops to count occurrences for each element.
+If n can go up to 50,000 (i.e., 5 * 10^4), the approach could potentially take up to 50,000^2 iterations (i.e., 2.5 billion iterations), which is very inefficient for large arrays.
+Does this satisfy the constraint? No, the brute force approach is inefficient for large values of n (up to 50,000) because of the quadratic time complexity.
+-109 <= nums[i] <= 109:
+
+The approach does not depend on the actual values of the elements in the array other than comparing them. As long as the elements are integers within the specified range, the approach will work.
+Does this satisfy the constraint? Yes, the approach will work for all integer values in the range of -109 to 109 because it simply compares the elements without performing any arithmetic operations that would be affected by the range. */
