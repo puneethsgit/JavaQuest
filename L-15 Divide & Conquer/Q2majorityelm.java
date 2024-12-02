@@ -43,7 +43,7 @@ public class Q2majorityelm {
         }
 
         //recurse on left and right halves of this slice
-        int mid = (hi-lo) / 2 + lo;
+        int mid = (hi-lo) / 2 + lo; 
         int left =  majorityElementRec(nums, lo, mid);
         int right = majorityElementRec(nums, mid+1, hi);
 
@@ -65,7 +65,7 @@ public class Q2majorityelm {
 
     
     public static void main(String[] args) {
-        int[] nums = {3,2,3,2,3};
+        int[] nums = {1,2};
         System.out.println(majorityElem(nums));
     }
 }
