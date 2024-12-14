@@ -39,6 +39,7 @@ public class Q3inversioncount {
 
     //MergeSort Approach
 
+    
     public static void main(String[] args) {
         int arr[] = {2,4,1,3,5};
         System.out.println("Inversion Count = " + getInvCount(arr));
