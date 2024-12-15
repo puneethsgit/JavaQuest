@@ -39,9 +39,76 @@ public class Q3inversioncount {
 
     //MergeSort Approach
 
+    private static int merge(int arr[], int low, int mid, int high) {
+
+        int inversionCount = 0;
+        int temp[] = new int[high - low + 1];
+
+        int left = low; //iterator for left
+        int right = mid+1; //iterator for right
+        int k = 0; //iterator for temp
+
+
+        //Storing elements in the temporary array in a sorted manner
+        while(left <= mid && right <= high) {
+            if(arr[left] <= arr[right]) {
+                temp[k] = arr[left];
+                k++;
+                left++;
+            }
+            else {  //right is smaller
+                temp[k] = arr[right];
+                inversionCount += (mid - left + 1);
+                right++;
+            }
+        }
+
+        // if elements on the left half are still left
+
+        while(left <= mid) {
+            temp[k++] = arr[left++]; //post increment
+        }
+
+        // if elements on right half are still left
+
+        while(right <= high) {
+            temp[k++] = arr[right++]; //post increment
+        }
+
+        // transfering all elements from temp to arr
+
+        for(int i=0; i<temp.length; i++) {
+            arr[low+i] = temp[i];
+        }
+
+        return inversionCount;
+
+    }
+
+    private static int mergeSort(int arr[], int low, int high) {
+
+        int inversionCount = 0;
+    
+        if(low >= high) { //Base Condition
+            return inversionCount;
+        }
+       
+        int mid = (low + high) / 2;
+
+        inversionCount += mergeSort(arr, low, mid);
+        inversionCount += mergeSort(arr, mid+1, high);
+        inversionCount += merge(arr, low, mid, high);
+
+        return inversionCount;
+
+    }
+    public static int getInversion(int arr[]) {
+        int n = arr.length;
+        return mergeSort(arr,0,n-1);
+    }
     
     public static void main(String[] args) {
-        int arr[] = {2,4,1,3,5};
-        System.out.println("Inversion Count = " + getInvCount(arr));
+        int arr[] = {5,3,2,4,1};
+        System.out.println("Inversion Count = " + getInversion(arr));
     }
 }

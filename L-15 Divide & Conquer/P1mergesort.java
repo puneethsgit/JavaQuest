@@ -18,7 +18,7 @@ public class P1mergesort {
 
     public static void merge(int arr[], int si, int mid, int ei) {
         //left(0,3) = 4 right(4,5) = 2 -> 5-0+1 = 6
-        int temp[] = new int[ei-si+1];
+        int temp[] = new int[ei-si+1];//+1 array index zero start
         int i = si; //iterator for left part 
         int j = mid+1; //iterator for right part
         int k = 0; //iterator for temp arr
