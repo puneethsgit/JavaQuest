@@ -42,23 +42,24 @@ public class Q3inversioncount {
     private static int merge(int arr[], int low, int mid, int high) {
 
         int inversionCount = 0;
-        int temp[] = new int[high - low + 1];
+      
 
         int left = low; //iterator for left
         int right = mid+1; //iterator for right
         int k = 0; //iterator for temp
 
+        int temp[] = new int[high - low + 1];
 
         //Storing elements in the temporary array in a sorted manner
         while(left <= mid && right <= high) {
             if(arr[left] <= arr[right]) {
-                temp[k] = arr[left];
-                k++;
-                left++;
+                temp[k++] = arr[left++];
+                //k++; left++;
             }
             else {  //right is smaller
                 temp[k] = arr[right];
                 inversionCount += (mid - left + 1);
+                k++;
                 right++;
             }
         }
@@ -96,7 +97,7 @@ public class Q3inversioncount {
         int mid = (low + high) / 2;
 
         inversionCount += mergeSort(arr, low, mid);
-        inversionCount += mergeSort(arr, mid+1, high);
+        inversionCount += mergeSort(arr, mid + 1, high);
         inversionCount += merge(arr, low, mid, high);
 
         return inversionCount;
