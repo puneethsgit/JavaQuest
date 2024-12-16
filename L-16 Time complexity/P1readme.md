@@ -30,10 +30,3 @@ The following graph compares the growth of these time complexities as the input 
 - **O(2^n)**: Exponential time complexity, typically seen in brute-force solutions to problems like the Traveling Salesman Problem.
 - **O(n!)**: Factorial time complexity, which grows extremely fast, as seen in problems that require checking all possible permutations.
 
-## Installation
-
-Clone this repository to your local machine using the following command:
-
-```bash
-git clone https://github.com/your-username/your-repository.git
-```
