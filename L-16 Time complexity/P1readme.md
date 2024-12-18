@@ -2,7 +2,7 @@
 
 This repository contains visualizations of common time complexities and their growth with increasing input size. Understanding the time complexity of algorithms is essential for optimizing code performance and choosing the right algorithm for a given problem.
 
-## Time Complexities Covered.
+## Time Complexities Covered..
 
 - **O(1)** - Constant Time
 - **O(log n)** - Logarithmic Time
