@@ -19,7 +19,8 @@
     "L-1 variables &datatypes",
     "L-2 operators",
     "L-3 conditionals",
-    "L-15 Divide & Conquer"
+    "L-15 Divide & Conquer",
+    "L-17 Backtracking"
   ],
   "java.project.referencedLibraries": [],
   "java.debug.settings.onBuildFailureProceed": true
