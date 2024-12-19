@@ -8,8 +8,8 @@ public class P1btonarr {
         }
         //recursion
         arr[i] = val;
-        changeArr(arr, i+1, val+1); 
-        arr[i] = arr[i] - 2; //backtracking
+        changeArr(arr, i+1, val+1); // function call step
+        arr[i] = arr[i] - 2; //backtracking step
     }
 
     static void printArr(int arr[]) {
