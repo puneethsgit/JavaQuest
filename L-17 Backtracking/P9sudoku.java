@@ -1,4 +1,7 @@
-/* write a function to complete a sudoko (decision backtracking) is yes/no if yes print one solution */
+/* write a function to complete a sudoko (decision backtracking) is yes/no if yes print one solution 
+TIME COMPLEXITY : O(9 ^ 81)
+This is the theoretical upper bound, but it is highly unlikely to reach this in practice due to early pruning when invalid configurations are encountered.
+*/
 public class P9sudoku {
 
    public static boolean isSafe(int sudoku[][], int row, int col, int digit) {
