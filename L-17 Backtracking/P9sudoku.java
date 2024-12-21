@@ -57,6 +57,7 @@ public class P9sudoku {
                     return true;
                 }
                 sudoku[row][col] = 0; //solution not exits place zero again backtracking
+                /*This is a dead-end. For example, suppose the algorithm reaches a point where a certain cell has no valid numbers that can be placed due to conflicts in the row, column, or subgrid. */
             }
         }
 
