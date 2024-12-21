@@ -39,7 +39,7 @@ public class P9sudoku {
 
         //recursion
         int nextRow = row, nextCol = col+1;
-        if(col+1 == 9) {
+        if(col+1 == 9) {  //last col
             nextRow = row+1;
             nextCol = 0;
         }
