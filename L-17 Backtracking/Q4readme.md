@@ -1,5 +1,3 @@
-Here's the content from the previous response formatted as a `README.md`:
-
 ```markdown
 # Knight's Movement in Chess
 
@@ -43,7 +41,7 @@ Here’s the chessboard with these positions marked:
 
 Starting at (3, 3), the knight can move to:
 (1, 2), (1, 4), (2, 1), (2, 5), (4, 1), (4, 5), (5, 2), (5, 4)
-```
+
 
 ## Refactored Code Explanation
 
