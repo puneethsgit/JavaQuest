@@ -20,7 +20,8 @@
     "L-2 operators",
     "L-3 conditionals",
     "L-15 Divide & Conquer",
-    "L-17 Backtracking"
+    "L-17 Backtracking",
+    "L-18 Arraylist"
   ],
   "java.project.referencedLibraries": [],
   "java.debug.settings.onBuildFailureProceed": true
