@@ -16,7 +16,7 @@ public class P10pairsum2 {
         return false;
     }
 
-    public static boolean pairsums(ArrayList<Integer> list, int target) {
+    public static boolean pairsums(ArrayList<Integer> list, int target) {  //O(n)
         int n = list.size();
         int bp = -1; //breaking point initalized to -1
         for(int i=0; i<n; i++) {
