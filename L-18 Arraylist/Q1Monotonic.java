@@ -20,7 +20,7 @@ public class Q1Monotonic {
                 dec = false;
             }
         }
-        return inc || dec;
+        return inc || dec; //both false return false
     }
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
