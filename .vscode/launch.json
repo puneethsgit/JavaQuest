@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Q4beautifularr",
+      "request": "launch",
+      "mainClass": "Q4beautifularr",
+      "projectName": "Java_9450439a"
+    },
+    {
+      "type": "java",
       "name": "Debug P1mergesort",
       "request": "launch",
       "mainClass": "P1mergesort",
