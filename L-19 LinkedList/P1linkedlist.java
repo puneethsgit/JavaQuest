@@ -184,28 +184,82 @@ public class P1linkedlist {
         prev.next = prev.next.next;
         return; 
     }
+
+    //Slow - Fast Approach
+    public Node findMid(Node head) {  //helper function
+        Node slow = head;
+        Node fast = head;
+
+        while(fast != null && fast.next != null) {
+            slow = slow.next; //+1
+            fast = fast.next.next; // +2
+        }
+
+        return slow; //Slow is middle point
+    }
+
+    public boolean checkPalindrome() {
+        if(head == null || head.next == null) {  //no node OR one one
+            return true;
+        }
+        //step1 - find mid
+        Node midNode = findMid(head);
+
+        //step2 - reverse 2nd half
+        Node prev = null;
+        Node curr = midNode; //current node is midNode
+        Node next;
+        while(curr != null) {
+            next = curr.next; //store curr.next in next 
+            curr.next = prev; //curr.next should point prev
+            prev = curr; //prev update to curr
+            curr = next; //curr update to next
+        }
+
+        Node right = prev; //right half head
+        Node left = head; //left half head
+
+        //step3 - check left half and right half
+        while(right != null) {
+            if(left.data != right.data) {
+                return false;
+            }
+            right = right.next;
+            left = left.next;
+        }
+
+        return true;
+    }
     public static void main(String[] args) {
         P1linkedlist ll = new P1linkedlist();
+        // ll.addFirst(2);
+        // ll.addFirst(1);
+        // ll.addLast(3);
+        // ll.addLast(4);
+        // ll.add(2, 9);
+        // ll.print(); //9->1->2->3->4->null
+        // System.out.println(ll.size);
+        // ll.removeFirst();
+        // ll.print();
+        // ll.removeLast();
+        // ll.addLast(7);
+        // ll.addLast(8);
+        // ll.print();
+        // //System.out.println(ll.size);
+        // System.out.println(ll.recSearch(7));
+        // ll.print();
+        // ll.reverse();
+        // ll.print();
+        //  // System.out.println(ll.head); //PRINTS ADDRESS
+        // ll.deleteNthFromEnd(4);
+        // ll.print(); 
+
+        /* PALINDROME */
+        ll.addFirst(1);
+        ll.addFirst(2);
         ll.addFirst(2);
         ll.addFirst(1);
-        ll.addLast(3);
-        ll.addLast(4);
-        ll.add(2, 9);
-        ll.print(); //9->1->2->3->4->null
-        System.out.println(ll.size);
-        ll.removeFirst();
         ll.print();
-        ll.removeLast();
-        ll.addLast(7);
-        ll.addLast(8);
-        ll.print();
-        //System.out.println(ll.size);
-        System.out.println(ll.recSearch(7));
-        ll.print();
-        ll.reverse();
-        ll.print();
-         // System.out.println(ll.head); //PRINTS ADDRESS
-        ll.deleteNthFromEnd(4);
-        ll.print();
+        System.out.println(ll.checkPalindrome());
     }
 }
