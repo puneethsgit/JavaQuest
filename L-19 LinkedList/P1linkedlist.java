@@ -204,8 +204,8 @@ public class P1linkedlist {
         ll.print();
         ll.reverse();
         ll.print();
-       // System.out.println(ll.head); //PRINTS ADDRESS
-       ll.deleteNthFromEnd(4);
-       ll.print();
+         // System.out.println(ll.head); //PRINTS ADDRESS
+        ll.deleteNthFromEnd(4);
+        ll.print();
     }
 }
