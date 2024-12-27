@@ -126,6 +126,64 @@ public class P1linkedlist {
         }
         return -1; //key not found
     }
+
+    public int helper(Node head, int key) {  //O(n) TC & SC
+        if(head == null) {
+            return -1;
+        }
+        if(head.data == key) {
+            return 0;
+        }
+        int idx = helper(head.next, key);
+        if(idx == -1) {
+            return -1;
+        }
+
+        return idx+1;
+    }
+    public int recSearch(int key) {
+        return helper(head, key);
+    }
+
+    public void reverse() { //O(n)
+        Node prev = null;
+        Node curr = tail = head; //RTL
+        Node next;
+
+        while(curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next; 
+        }
+        head = prev; 
+    }
+
+    public void deleteNthFromEnd(int n) {
+        //calculate size
+        int sz = 0;
+        Node temp = head;
+        while(temp != null) {
+            temp = temp.next;
+            sz++;
+        }
+
+        if(n == sz) { //corner delete the head
+            head = head.next; //removeFirst
+            return;
+        }
+         
+        //sz - n
+        int i = 1;
+        int iToFind = sz - n;
+        Node prev = head;
+        while(i < iToFind) {
+            prev = prev.next;
+            i++;
+        }
+        prev.next = prev.next.next;
+        return; 
+    }
     public static void main(String[] args) {
         P1linkedlist ll = new P1linkedlist();
         ll.addFirst(2);
@@ -141,7 +199,13 @@ public class P1linkedlist {
         ll.addLast(7);
         ll.addLast(8);
         ll.print();
-        System.out.println(ll.size);
-        System.out.println(ll.itrSearch(7));
+        //System.out.println(ll.size);
+        System.out.println(ll.recSearch(7));
+        ll.print();
+        ll.reverse();
+        ll.print();
+       // System.out.println(ll.head); //PRINTS ADDRESS
+       ll.deleteNthFromEnd(4);
+       ll.print();
     }
 }
