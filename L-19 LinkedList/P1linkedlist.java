@@ -259,7 +259,7 @@ public class P1linkedlist {
         ll.addFirst(2);
         ll.addFirst(2);
         ll.addFirst(1);
-        ll.print();
+        ll.print(); //prints
         System.out.println(ll.checkPalindrome());
     }
 }
