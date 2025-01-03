@@ -61,8 +61,36 @@ public class P5doublell {
     }
 
     //add last
+    public void addLast(int data) {
+        Node newNode = new Node(data);
+        size++;
+        if(head == null) {
+            head = tail = newNode;
+            return;
+        }
+        newNode.prev = tail;  // Set the previous pointer of the new node to the current tail
+        tail.next = newNode; // Set the next pointer of the current tail to the new node
+        tail = newNode; // Update the tail to the new node
+    }
     //remove last
-
+    public int removeLast() {
+        if(head == null) {
+            System.out.println("DLL is empty");
+            return Integer.MIN_VALUE;
+        } 
+        if(size == 1) {
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val;
+        }
+        int val = tail.data; // Store the data of the last node
+        tail = tail.prev;  // Move the tail pointer to the previous node
+        tail.next = null; // Remove the reference to the old last node
+        size--;
+        return val;
+    }
+    /*Using a tail pointer in a singly linked list for removeLast is tricky because the tail pointer only helps you directly access the last node. */
     //reverse
     public void reverse() {
         Node curr = head;
@@ -83,11 +111,15 @@ public class P5doublell {
         dll.addFirst(2);
         dll.addFirst(1);
         dll.print();
-        System.out.println(dll.size);
+        //System.out.println(dll.size);
         //dll.removeFirst();
         //System.out.println(dll.size);
         //dll.print();
-        dll.reverse();
+        //dll.reverse();
+        //dll.print();
+        dll.addLast(10);
+        dll.print();
+        dll.removeLast();
         dll.print();
     }
 }
