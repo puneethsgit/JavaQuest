@@ -1,6 +1,4 @@
-/* Merge Sort on a LinkedList */
-public class P3llmergsort {
-
+public class P4zigzag {
     public static class Node {
         int data; //data
         Node next; //type node as it points next node (reference to another instance of the Node class).
@@ -116,83 +114,56 @@ public class P3llmergsort {
         return val;
     }
 
-
-    //MERGE SORT
-
-    private Node getMid(Node head) {  //return type Node
+    public void zigzag() {
+        //find mid
         Node slow = head;
         Node fast = head.next;
         while(fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
-        return slow; //mide node
-    }
+        Node mid = slow;
 
-    private Node merge(Node head1, Node head2) {
-        Node mergedLL = new Node(-1); //new node initalized with -1 in mergedLL
-        Node temp = mergedLL; //points mergedLL
+        //reverse 2nd half
+        Node curr = mid.next;
+        mid.next = null; //break
+        Node prev = null;
+        Node next;
 
-        while(head1 != null && head2 != null) {
-            if(head1.data <= head2.data) {
-                temp.next = head1; 
-                head1 = head1.next; //update
-                temp = temp.next; //update
-            } else {
-                temp.next = head2;
-                head2 = head2.next;
-                temp = temp.next;
-            }
-        }
-        //2 Loops for left over elements
-        while(head1 != null) {
-            temp.next = head1;
-            head1 = head1.next;
-            temp = temp.next;
-        }
-        while(head2 != null) {
-            temp.next = head2;
-            head2 = head2.next;
-            temp = temp.next;
+        while(curr != null) { //3 step approach
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
         }
 
-        return mergedLL.next; //returned next to neglect (remove) head -1
+        Node left = head; //L head
+        Node right = prev; //R head
+        Node nextL, nextR;
 
-    }
-    public Node mergeSort(Node head) {  //returns head node of sorted
-        //basecase
-        if(head == null || head.next == null) { //either LL is empty or LL has single element
-            return head;
+        //alt merge - zigzag
+        while(left != null && right != null) {
+            nextL = left.next; //store
+            left.next = right; //point
+            nextR = right.next; //store
+            right.next = nextL; //point
+
+            //update
+            left = nextL;
+            right = nextR;
         }
-        //find mid
-        Node mid = getMid(head);
-
-        //left & right MS
-        Node rightHead = mid.next;
-        mid.next = null;
-        Node newLeft = mergeSort(head); 
-        Node newRight = mergeSort(rightHead);
-
-        //merge
-        return merge(newLeft, newRight);
-    }
-
-
+     }
 
     public static void main(String[] args) {
-        P3llmergsort ll = new P3llmergsort();
-
-        ll.addFirst(1);
-        ll.addFirst(2);
-        ll.addFirst(3);
-        ll.addFirst(4);
-        ll.addFirst(5);
-
-        ll.print(); //5->4->3->2->1
-
-        ll.head = ll.mergeSort(ll.head); //new head is initialized
+        P4zigzag ll = new P4zigzag();
+        ll.addLast(1);
+        ll.addLast(2);
+        ll.addLast(3);
+        ll.addLast(4);
+        ll.addLast(5);
+        //1->2->3->4->5->null
         ll.print();
-
-        //Time Complexity O(nlogn)
+        ll.zigzag();
+        ll.print();
     }
 }
