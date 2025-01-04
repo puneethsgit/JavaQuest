@@ -7,6 +7,10 @@ Sample Output 1 : 1->4->3->2 */
 
 /* Time Complexity : O(n) & space Complexity : O(1) */
 
+
+/* If you only need a simple implementation to demonstrate or solve a specific problem (e.g., swapping nodes), this approach works well.
+For teaching or quick prototyping, it can be simpler to explain and understand.
+YOU CAN USE THIS SYNTAX FOR LINKED LIST CREATION BUT IN STANDARD THERE IS FEATURE OF ENCAPSULATION REUSEABILITY */
 public class  Node {
     int data;
     Node next;
@@ -16,7 +20,7 @@ public class  Node {
     }
 }
 public class Q4swapingnodes {
-    Node head;
+    Node head; //datatype node varaible name node
 
     public void swapNodes(int x, int y) {
         if(x == y) {
