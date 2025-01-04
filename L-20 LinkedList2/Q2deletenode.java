@@ -111,3 +111,19 @@ public class Q2deletenode {
     }
 
 }
+
+
+/* System.out.print()
+Purpose: Prints text to the console without a newline.
+Behavior: The output is printed on the same line, and the cursor remains at the end of the printed text. The next output will be printed right after the current output, unless you explicitly add a newline.
+
+System.out.println()
+Purpose: Prints text to the console with a newline.
+Behavior: The output is printed on the same line, but after the text is printed, a newline character (\n) is automatically added. This means the cursor moves to the next line, so the next output will start from the new line.
+
+System.out.printf()
+Purpose: Prints formatted text to the console.
+Behavior: printf allows you to format the output in a more controlled way, using format specifiers (like %d, %s, %f, etc.). You can specify how values should be printed (e.g., number of decimal places, padding, alignment, etc.).
+Usage: It is particularly useful when you need to print variables in a specific format, such as controlling the number of decimal places for a floating-point number or printing integers with leading zeros.
+
+*/
