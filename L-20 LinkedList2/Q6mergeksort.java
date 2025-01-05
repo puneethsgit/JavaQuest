@@ -7,6 +7,7 @@ l3 = 9->10->NULL
 Sample Output 1 : 1>3->6->8->9->10->NULL */
 
 /* BRUTE FORCE APPROACH */
+/* A brute force approach to merge K sorted linked lists into a single sorted list to extract all node values into a Arraylist. Then we sort this Arraylist and reconstruct the linked list from these sorted node values */
 
 import java.util.ArrayList;
 import java.util.Collections;
