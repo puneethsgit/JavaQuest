@@ -99,3 +99,6 @@ public class Q7mergeksort2 {
         printLinkedList(mergedList);
     }
 }
+
+
+//NOTE : ANOTHER APPROACH WITH BETTER OPTIMIZATION IS THERE REFER TUF
