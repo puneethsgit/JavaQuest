@@ -9,9 +9,12 @@ public class P4stackJC {
         s.push(2);
         s.push(3);
         
+        System.out.println(s);
         while(!s.isEmpty()) {
             System.out.println(s.peek());
             s.pop();
         }
+
+        System.out.println(s);
     }
 }
