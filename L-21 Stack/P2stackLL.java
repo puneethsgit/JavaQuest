@@ -1,4 +1,7 @@
 /* Stack using LinkedList */
+
+import java.util.Stack;
+
 public class P2stackLL {
     static class Node {
         int data;
@@ -9,7 +12,8 @@ public class P2stackLL {
         }
     }
     static class Stack {
-        static Node head = null; //initalized head with null
+        static Node head = null; //initalized head with null 
+        // Removed 'static' so each stack has its own head and make it private
 
         //isempty
         public static boolean isEmpty() {

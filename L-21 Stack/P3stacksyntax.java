@@ -27,7 +27,7 @@ public class P3stacksyntax {
 
         Node(int data) {
 
-import java.util.Stack;
+
 
             this.data = data;
             this.next = null;
