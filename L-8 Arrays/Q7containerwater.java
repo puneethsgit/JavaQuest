@@ -25,7 +25,8 @@ public class Q7containerwater {
             int ht = Math.min(height[lp],height[rp]); //min height
             int currentWater = w * ht;
             maxWater = Math.max(currentWater, maxWater);
-           if(height[lp] < height[rp]){
+           if(height[lp] < height[rp]){  //water level controlled by min height so min lp so lp++
+            //which bar has minimum height will increment that (if lp > rp then rp--)
                 lp++;
            }else{
                 rp--;
