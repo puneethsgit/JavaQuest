@@ -24,7 +24,8 @@
     "L-18 Arraylist",
     "L-19 LinkedList",
     "L-20 LinkedList2",
-    "L-21 Stack"
+    "L-21 Stack",
+    "L-22 Queue"
   ],
   "java.project.referencedLibraries": [],
   "java.debug.settings.onBuildFailureProceed": true
