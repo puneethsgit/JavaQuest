@@ -58,8 +58,11 @@ public class P2queueAo {
         Queue q = new Queue(5);
         q.add(1);
         q.add(2);
+        System.out.println(q.isEmpty());
         q.add(3);
-
+        System.out.println(q.isEmpty());
+        q.add(4);
+        q.add(5);
         while (!q.isEmpty()) {
             System.out.println(q.peek()); // FIFO 1, 2, 3
             q.remove();
