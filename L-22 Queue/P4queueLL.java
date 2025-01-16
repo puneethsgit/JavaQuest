@@ -82,6 +82,8 @@ public class P4queueLL {
     }
 }
 
+//TIME COMPLEXITY IS O(1) for all operations
+
 
 /* The error occurs because you are trying to create an instance of the Node class inside the enqueue method, but Node is a non-static inner class. Non-static inner classes are associated with an instance of the enclosing class, and they cannot be instantiated from a static context (like the main method) unless they are tied to an instance of the enclosing class.
 
