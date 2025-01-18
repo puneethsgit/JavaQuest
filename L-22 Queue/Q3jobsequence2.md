@@ -53,8 +53,11 @@ import java.io.*;
 import java.lang.*;
 import java.util.*;
 
+// Job class represents a job with an id, profit, and deadline
 class Job {
    int id, profit, deadline;
+
+   // Constructor to initialize job id, deadline, and profit
    Job(int x, int y, int z) {
       this.id = x;
       this.deadline = y;
@@ -63,65 +66,80 @@ class Job {
 }
 
 class solve {
-   // return an array of size 2 having the 0th element equal to the count
-   // and 1st element equal to the maximum profit
+   // Method to schedule jobs in such a way as to maximize profit
+   // Returns an array where:
+   // - The first element is the count of jobs done
+   // - The second element is the total profit
    int[] JobScheduling(Job arr[], int n) {
+
+      // Sort the jobs in descending order of profit (greedy approach)
       Arrays.sort(arr, (a, b) -> (b.profit - a.profit));
 
+      // Find the maximum deadline among all jobs
       int maxi = 0;
       for (int i = 0; i < n; i++) {
          if (arr[i].deadline > maxi) {
-            maxi = arr[i].deadline;
+            maxi = arr[i].deadline; // Update maxi to the highest deadline
          }
       }
 
+      // Create an array to keep track of scheduled jobs
+      // result[i] will store the index of the job scheduled at slot i
       int result[] = new int[maxi + 1];
 
+      // Initialize the result array with -1 (indicating no job is scheduled at that slot)
       for (int i = 1; i <= maxi; i++) {
          result[i] = -1;
       }
 
+      // Initialize variables to track the number of jobs done and the total profit
       int countJobs = 0, jobProfit = 0;
 
+      // Iterate through each job in the sorted array
       for (int i = 0; i < n; i++) {
 
+         // Try to find a free slot for the current job (starting from its deadline)
          for (int j = arr[i].deadline; j > 0; j--) {
 
-            // Free slot found
+            // If a free slot is found (result[j] == -1), schedule the job
             if (result[j] == -1) {
-               result[j] = i;
-               countJobs++;
-               jobProfit += arr[i].profit;
-               break;
+               result[j] = i;  // Mark the slot with the job index
+               countJobs++;     // Increment the job count
+               jobProfit += arr[i].profit;  // Add the job's profit to total profit
+               break;  // Exit the loop as the job is scheduled
             }
          }
       }
 
+      // Create an array to return the result: number of jobs and total profit
       int ans[] = new int[2];
-      ans[0] = countJobs;
-      ans[1] = jobProfit;
+      ans[0] = countJobs;  // Store the number of jobs scheduled
+      ans[1] = jobProfit;  // Store the total profit
       return ans;
-
    }
 }
+
 class Main {
    public static void main(String[] args) throws IOException {
 
-      //size of array
+      // Initialize an array of jobs
       Job[] arr = new Job[4];
-      arr[0] = new Job(1, 4, 20);
-      arr[1] = new Job(2, 1, 10);
-      arr[2] = new Job(3, 2, 40);
-      arr[3] = new Job(4, 2, 30);
+      arr[0] = new Job(1, 4, 20);  // Job 1 with deadline 4 and profit 20
+      arr[1] = new Job(2, 1, 10);  // Job 2 with deadline 1 and profit 10
+      arr[2] = new Job(3, 2, 40);  // Job 3 with deadline 2 and profit 40
+      arr[3] = new Job(4, 2, 30);  // Job 4 with deadline 2 and profit 30
 
+      // Create an object of the solve class
       solve ob = new solve();
 
-      //function call
+      // Call the JobScheduling method and get the result (number of jobs and total profit)
       int[] res = ob.JobScheduling(arr, 4);
-      System.out.println(res[0] + " " + res[1]);
 
+      // Print the result: number of jobs and total profit
+      System.out.println(res[0] + " " + res[1]);
    }
 }
+
 ```
 
 ## Conclusion
