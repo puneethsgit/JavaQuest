@@ -1,5 +1,4 @@
 
-```markdown
 # Job Sequencing Problem
 
 ## Problem Explanation
