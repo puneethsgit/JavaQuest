@@ -55,52 +55,6 @@ c, a
 
 ```
 
-## Steps to Solve:
-
-1. **Sort the Jobs by Profit**: First, sort the jobs in decreasing order of profit. This ensures that we prioritize jobs with higher profit.
-
-2. **Select Jobs**: Try to schedule jobs in such a way that the job is completed before its deadline. If the job's deadline is already occupied, we try to find an earlier available time slot.
-
-3. **Maximize Profit**: After selecting the jobs, calculate the total profit earned by completing the jobs within their deadlines.
-
-## Example Walkthrough:
-
-### Input:
-```
-
-JobID Deadline Profit
-a 4 20
-b 1 10
-c 1 40
-d 1 30
-
-```
-
-### Step 1: Sort the Jobs by Profit:
-```
-
-JobID Deadline Profit
-c 1 40
-d 1 30
-a 4 20
-b 1 10
-
-```
-
-### Step 2: Schedule the Jobs:
-- Start with the job with the highest profit, `c` (Profit = 40), and check if it can be scheduled. The deadline for `c` is 1, and we can complete it at time 1.
-- Now, the time slot at time 1 is occupied. The next job is `a` (Profit = 20) with a deadline of 4. We can complete it at time 4.
-- There are no more jobs that can be completed before their deadlines.
-
-### Output:
-The jobs selected are `c` and `a`, which yield the maximum profit.
-
-### Final Answer:
-```
-
-c, a
-
-```
 
 # Job Sequencing Problem - Java Code Explanation
 
