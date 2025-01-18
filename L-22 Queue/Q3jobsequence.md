@@ -1,6 +1,4 @@
-Here's the content converted into a Markdown (`.md`) file format:
 
-```markdown
 # Job Sequencing Problem
 
 ## Problem Explanation
