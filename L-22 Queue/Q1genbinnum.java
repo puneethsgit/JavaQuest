@@ -40,7 +40,4 @@ public class Q1genbinnum {
     }
 }
 
-
-/*Time Complexity : o(n)
-Space Complexity: o(n)
- */
+/* TC & SC : O(n) */
