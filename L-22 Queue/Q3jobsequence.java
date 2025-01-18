@@ -4,5 +4,7 @@ we have an array of jobs where every job had a deadline and associated profit. i
 
  */
 public class Q3jobsequence {
-    
+    public static void main(String[] args) {
+        
+    }
 }
