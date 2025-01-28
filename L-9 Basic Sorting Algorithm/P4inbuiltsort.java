@@ -19,7 +19,7 @@ public class P4inbuiltsort {
     public static void main(String[] args) {
         int arr[] = {5,4,1,3,2}; 
         Arrays.sort(arr);
-        //printArr(arr);
+        //printArr(arr); //call
         Integer arr2[] = {5,-4,1,3,2};
         Arrays.sort(arr2,Collections.reverseOrder());
         printArr2(arr2);
