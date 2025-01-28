@@ -25,6 +25,6 @@ class Student {
     //constructor - even though we wont define constructor means java automatically defines the constructor but in java automatic constructor there is no initalization
     Student(String name) {
         this.name  = name; 
-        System.out.println("constructor is called");
+        System.out.println("constructor is called" + this.name);
     }
 }
