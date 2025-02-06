@@ -2,7 +2,7 @@ public class P1linkedlist {
 
     public static class Node {
         int data; //data
-        Node next; //type node as it points next node (reference to another instance of the Node class).
+        Node next; //type node as it points next node (reference to another instance of the Node class)
 
         public Node(int data) { //constructor
             this.data = data;
