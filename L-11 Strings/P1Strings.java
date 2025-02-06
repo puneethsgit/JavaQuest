@@ -32,6 +32,7 @@ public class P1Strings {
 
         System.out.println(fullName.charAt(0));
         printLetters(fullName);
+        
     }
 
     //PRINT LETTERS ->
