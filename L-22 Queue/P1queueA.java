@@ -18,7 +18,7 @@ public class P1queueA{
 
         //add
         public static void add(int data) {
-            if(rear == size - 1) { //checking queue is full
+            if(rear == size - 1) { //checking queue is full.
                 System.out.println("queue is full");
                 return;
             }
