@@ -10,3 +10,5 @@ public class Q1 {
         System.out.print(exp2);
     }
 }
+/* Examples in JavaScript	Number, String, Boolean, Undefined, Null, Symbol, BigInt -> Non primitive Object, Array, Function, Set, Map
+Examples in Python	int, float, str, bool, None	 -> Non primitive list, dict, set, tuple, function, class
